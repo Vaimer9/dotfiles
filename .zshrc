@@ -7,22 +7,10 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5B5B5B,bg=default,bold,underline"
 
 source $ZSH/oh-my-zsh.sh
 
-################################
-##### Node Version Manager #####
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-################################
-
 plugins=( 
 	git
     zsh-autosuggestions
 )
-
-##############################
-##### Google Cloud Shell #####
-if [ -f '/home/v9/Downloads/gcp/google-cloud-sdk/path.zsh.inc' ]; then . '/home/v9/Downloads/gcp/google-cloud-sdk/path.zsh.inc'; fi
-if [ -f '/home/v9/Downloads/gcp/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/v9/Downloads/gcp/google-cloud-sdk/completion.zsh.inc'; fi
-##############################
 
 export KEYTIMEOUT=1
 
