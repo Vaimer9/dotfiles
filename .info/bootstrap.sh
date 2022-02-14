@@ -20,10 +20,10 @@ function clone_repo() {
 
 function copy_files() {
 	mkdir ~/test_home/.config
-	mv .config/nvim ~/test_home/.config/nvim
-	mv .config/alacritty ~/test_home/.config/alacritty
-	mv .config/picom ~/test_home/.config/picom
-	mv .config/awesome ~/test_home/.config/awesome
+	mv .config/nvim ~/.config/nvim
+	mv .config/alacritty ~/.config/alacritty
+	mv .config/picom ~/.config/picom
+	mv .config/awesome ~/.config/awesome
 	mv .zshrc ~/test_home/.zshrc
 }
 
