@@ -81,6 +81,14 @@ source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ##########################
 
 bindkey '^ ' autosuggest-accept
-#pfetch
 
 source /home/v9/.config/broot/launcher/bash/br
+
+RND=$((1 + RANDOM % 2))
+
+if [ $RND -eq 1 ]
+then
+	fortune | cowsay
+else
+	ufetch
+fi
