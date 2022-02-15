@@ -13,11 +13,11 @@ return {
     screenshot = 'flameshot screen -p ~/Pictures',
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot screen -p ~/Pictures -d 5000',
-    browser = 'chromium',
+    browser = 'firefox',
     editor = 'nvim',
     social = 'discord',
     game = rofi_command,
-    files = 'dolphin',
+    files = 'lf',
     music = rofi_command 
   },
   run_on_start_up = {
