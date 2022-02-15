@@ -67,7 +67,8 @@ alias tmux="tmux -u"
 alias lvim="nvim -u ~/.config/nvim/lsp.vim"
 alias mvim="nvim -u ~/.config/nvim/minimal.vim"
 alias clauck="tty-clock -ct -C 4"
-alias pacman="sudo pacman"
+alias pacman="doas pacman"
+alias sudo="doas"
 alias lofi="mpv https://www.youtube.com/watch\?v\=5qap5aO4i9A --no-video"
 alias vsh="/home/v9/coding/rust/vsh/target/release/vsh"
 alias icat="kitty +kitten icat"
@@ -81,3 +82,5 @@ source .oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 bindkey '^ ' autosuggest-accept
 #pfetch
+
+source /home/v9/.config/broot/launcher/bash/br
