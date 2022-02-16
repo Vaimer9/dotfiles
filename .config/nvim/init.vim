@@ -1,4 +1,3 @@
-" set termguicolors
 set mouse=a
 set number
 set tabstop=4
@@ -87,9 +86,11 @@ let g:dashboard_custom_header = [
 \ '    \/ \__`_|_|_| |_| |_|\___|_|   /_/  ',
 \ ]
 
-lua require('neoscroll').setup()
 lua << EOF
 	require('neoscroll').setup()
 	require("bufferline").setup{
 	}
 EOF
+
+set termguicolors
+highlight Normal ctermbg=NONE guibg=NONE
