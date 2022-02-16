@@ -91,10 +91,24 @@ local LayoutBox = function(s)
   return layoutBox
 end
 
+local makeNewShape = function(cr, width, height)
+	gears.shape.rounded_rect(cr, width, height, 2)
+end
+
+
 local TopPanel = function(s)
   
     local panel =
-    wibox(
+	awful.wibar({
+		position = "top",
+		border_width = 4,
+		border_color = "#RRGGBBAA",
+		screen = s,
+		height = dpi(32),
+		-- shape = makeNewShape(cr, s.geometry.width, 22)
+
+	})
+    local secondary = wibox(
     {
       ontop = true,
       screen = s,
