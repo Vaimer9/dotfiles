@@ -60,6 +60,7 @@ preexec() { echo -ne '\e[5 q' ;}
 
 ####################
 ##### Aliases ######
+alias luavim="nvim -u ~/.config/nvim/lua/init.vim"
 alias record="ffmpeg -y -f x11grab -framerate 30 -s 1366x768 -i :0.0"
 alias dotup='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ls="exa"
