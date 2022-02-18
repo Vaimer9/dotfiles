@@ -1,4 +1,6 @@
+set guifont=JetBrains\ Mono:14
 set mouse=a
+set termguicolors
 set number
 set tabstop=4
 set softtabstop=4
@@ -34,6 +36,7 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'morhetz/gruvbox'
 Plug 'breuckelen/vim-resize'
+Plug 'joshdick/onedark.vim'
 call plug#end()
 
 
@@ -47,7 +50,6 @@ nnoremap <leader>vs :e ~/.vshrc.toml<CR>
 nnoremap <C-p> :e ~/.config/nvim/init.vim<CR>
 nnoremap <C-o> :e ~/.zshrc<CR>
 nnoremap <silent> <leader>md :e ~/Documents/code/todo.md<CR>
-nnoremap <leader>q :Files ./<CR>
 
 " Rust Specific Mappings
 nnoremap <leader>cq :! cargo check<CR>
@@ -88,9 +90,10 @@ let g:dashboard_custom_header = [
 
 lua << EOF
 	require('neoscroll').setup()
-	require("bufferline").setup{
+	require("bufferline").setup {
+		separator_style = "slant"
 	}
 EOF
 
-set termguicolors
-highlight Normal ctermbg=NONE guibg=NONE
+" The following configuration is for neovide. 
+
