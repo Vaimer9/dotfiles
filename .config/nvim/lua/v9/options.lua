@@ -1,5 +1,8 @@
 local opt = vim.opt
 
+vim.cmd[[colorscheme doom-one]]
+
+vim.g.mapleader = " "
 
 opt.number = true
 opt.relativenumber = true
@@ -11,15 +14,14 @@ opt.expandtab = true
 opt.termguicolors = true
 opt.mouse = "a"
 
--- For neovide
-opt.guifont = "Jetbrains Mono:18"
-
 vim.cmd [[
 set shortmess+=c
 syntax on
 filetype plugin on
 ]]
 
+
+vim.g.dashboard_default_executive = "telescope"
 vim.g.dashboard_custom_header = {
 	'__      __   _                     ___  ',
 	'\\ \\    / /  (_)                   / _ \\ ',
