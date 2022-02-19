@@ -29,4 +29,7 @@ return require('packer').startup(function()
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
 	use 'glepnir/dashboard-nvim'
+    use 'tpope/vim-surround'
+    use 'nvim-treesitter/nvim-treesitter'
+    use 'nvim-orgmode/orgmode'
 end)
