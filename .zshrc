@@ -74,6 +74,7 @@ alias sudo="doas"
 alias lofi="mpv https://www.youtube.com/watch\?v\=5qap5aO4i9A --no-video"
 alias vsh="/home/v9/coding/rust/vsh/target/release/vsh"
 alias icat="kitty +kitten icat"
+alias discord="~/Downloads/Discord/Discord </dev/null &>/dev/null &; disown %\~/Downloads/Discord/Discord"
 ####################
 
 ##########################
