@@ -91,11 +91,6 @@ local LayoutBox = function(s)
   return layoutBox
 end
 
-local makeNewShape = function(cr, width, height)
-	gears.shape.rounded_rect(cr, width, height, 2)
-end
-
-
 local TopPanel = function(s)
   
     local panel =
@@ -105,7 +100,7 @@ local TopPanel = function(s)
 		border_color = "#RRGGBBAA",
 		screen = s,
 		height = dpi(32),
-		-- shape = makeNewShape(cr, s.geometry.width, 22)
+		-- shape = makeNewShape(s.cr, s.geometry.width, 22)
 
 	})
     local secondary = wibox(
