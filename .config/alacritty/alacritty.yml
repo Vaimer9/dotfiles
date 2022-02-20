@@ -3,12 +3,12 @@ env:
 
 
 window:
-  opacity: 0.85
+  opacity: 0.80
 
 font:
   normal:
     family: JetBrainsMono Nerd Font
-  size: 14.0
+  size: 12.0
 
 colors:
   primary:
