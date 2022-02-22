@@ -3,13 +3,13 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 
 export ZSH="/home/v9/.oh-my-zsh"
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5B5B5B,bg=default,bold,underline"
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5B5B5B,bg=default,bold,underline"
 
 source $ZSH/oh-my-zsh.sh
 
 plugins=( 
 	git
-    zsh-autosuggestions
+    # zsh-autosuggestions
 )
 
 export KEYTIMEOUT=1
@@ -80,18 +80,11 @@ alias discord="~/Downloads/Discord/Discord </dev/null &>/dev/null &; disown %\~/
 ##########################
 ##### Manual Plugins #####
 source /home/v9/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ##########################
 
 bindkey '^ ' autosuggest-accept
 
 source /home/v9/.config/broot/launcher/bash/br
 
-RND=$((1 + RANDOM % 2))
-
-if [ $RND -eq 1 ]
-then
-	fortune | cowsay
-else
-	ufetch
-fi
+ufetch
