@@ -3,17 +3,17 @@ double = false
 color = [115, 147, 179]
 text_color = [33, 33, 33]
 promptchar = "λ"
-style = "modern"
+style = "arrow"
 
 [misc]
 alias = [
 ]
 
 [effects]
-underlined = false 
+underlined = true
 bold = true
-dimmed = false
-suggestion_color = "red"
+dimmed = true
+suggestion_color = "cyan"
 
-truecolors = false 
-true_suggestion_color = [255, 0, 0]
+truecolors = true 
+true_suggestion_color = [128,128,128]
