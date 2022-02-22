@@ -15,7 +15,7 @@ return {
     delayed_screenshot = 'flameshot screen -p ~/Pictures -d 5000',
     browser = 'firefox',
     editor = 'nvim',
-    social = 'discord',
+    social = '~/Downloads/Discord/Discord </dev/null &>/dev/null &; disown %\\~/Downloads/Discord/Discord',
     game = rofi_command,
     files = 'lf',
     music = rofi_command 

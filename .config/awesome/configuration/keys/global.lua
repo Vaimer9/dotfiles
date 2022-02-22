@@ -102,7 +102,7 @@ awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(
     end,
     {description = 'Switch to previous window', group = 'client'}
   ),
-  -- Programms
+  -- Programs
   awful.key(
     {modkey},
     'l',
@@ -261,6 +261,7 @@ awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(
     'z',
     function()
       _G.toggle_quake()
+      -- awful.spawn(apps.default.terminal)
     end,
     {description = 'dropdown application', group = 'launcher'}
   ),

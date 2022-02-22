@@ -12,7 +12,7 @@ local tags = {
   },
   {
     icon = icons.code,
-    type = 'code',
+    type = 'lock',
     defaultApp = apps.default.editor,
     screen = 1
   },
@@ -64,7 +64,7 @@ awful.screen.connect_for_each_screen(
           icon_only = true,
           layout = awful.layout.suit.tile,
           gap_single_client = true,
-          gap = 9,
+          gap = 5,
           screen = s,
           defaultApp = tag.defaultApp,
           selected = i == 1
@@ -79,9 +79,9 @@ _G.tag.connect_signal(
   function(t)
     local currentLayout = awful.tag.getproperty(t, 'layout')
     if (currentLayout == awful.layout.suit.max) then
-      t.gap = 9
+      t.gap = 5
     else
-      t.gap = 9
+      t.gap = 5
     end
   end
 )
