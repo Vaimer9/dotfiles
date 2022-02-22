@@ -18,6 +18,7 @@ vim.cmd [[
 set shortmess+=c
 syntax on
 filetype plugin on
+autocmd FileType dashboard set showtabline=0 | autocmd WinLeave <buffer> set showtabline=2
 ]]
 
 

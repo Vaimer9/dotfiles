@@ -13,8 +13,7 @@ return require('packer').startup(function()
 		'kyazdani42/nvim-tree.lua',
 		requires = {
 		  'kyazdani42/nvim-web-devicons', -- optional, for file icon
-		},
-		config = function() require'nvim-tree'.setup {} end
+		}
 	}
 	use 'psliwka/vim-smoothie'
 	use 'tpope/vim-commentary'
@@ -31,5 +30,7 @@ return require('packer').startup(function()
 	use 'glepnir/dashboard-nvim'
     use 'tpope/vim-surround'
     use 'nvim-treesitter/nvim-treesitter'
-    use 'nvim-orgmode/orgmode'
+    use 'rcarriga/nvim-notify'
+    use 'nvim-lua/popup.nvim'
+    use 'xiyaowong/nvim-transparent'
 end)

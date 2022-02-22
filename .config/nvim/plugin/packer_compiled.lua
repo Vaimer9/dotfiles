@@ -114,13 +114,22 @@ _G.packer_plugins = {
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
     url = "https://github.com/karb94/neoscroll.nvim"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
   ["nvim-scrollview"] = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/nvim-scrollview",
     url = "https://github.com/dstein64/nvim-scrollview"
   },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
+  },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
@@ -135,12 +144,6 @@ _G.packer_plugins = {
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  orgmode = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\forgmode\frequire\0" },
-    loaded = true,
-    path = "/home/v9/.local/share/nvim/site/pack/packer/start/orgmode",
-    url = "https://github.com/nvim-orgmode/orgmode"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -150,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["presence.nvim"] = {
     loaded = true,
@@ -189,14 +197,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
--- Config for: orgmode
-time([[Config for orgmode]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\forgmode\frequire\0", "config", "orgmode")
-time([[Config for orgmode]], false)
 if should_profile then save_profiles() end
 
 end)

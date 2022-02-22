@@ -21,5 +21,6 @@ bind({
     { "<leader>fa", ":DashboardFindWord<CR>" },
     { "<leader>fb", ":DashboardJumpMark<CR>" },
     { "<leader>cn", ":DashboardNewFile<CR>" },
-    { "<leader>ls", ":LspInstallInfo<CR>" }
+    { "<leader>ls", ":LspInstallInfo<CR>" },
+    { "<leader>tt", ":TransparentToggle<CR>" }
 })
