@@ -13,10 +13,11 @@ theme.font = 'JetBrains Mono 10'
 theme.primary = mat_colors.deep_orange
 
 -- Accent
-theme.accent = mat_colors.pink
+theme.accent = mat_colors.red
 
+theme.transparent = mat_colors.transparent
 -- Background
-theme.background = mat_colors.grey
+theme.background = mat_colors.black
 
 local awesome_overrides =
   function(theme)
@@ -33,10 +34,10 @@ local awesome_overrides =
   theme.fg_urgent = '#CC9393'
   theme.bat_fg_critical = '#232323'
 
-  theme.bg_normal = theme.background.hue_800
-  theme.bg_focus = '#5a5a5a'
-  theme.bg_urgent = '#3F3F3F'
-  theme.bg_systray = theme.background.hue_800
+  theme.bg_normal = '#RRGGBBAA'
+  theme.bg_focus = '#RRGGBBAA'
+  theme.bg_urgent = '#RRGGBBAA'
+  -- theme.bg_systray = ""
 
   -- Borders
 
@@ -65,20 +66,22 @@ local awesome_overrides =
 
   -- Taglist
 
-  theme.taglist_bg_empty = theme.background.hue_800
-  theme.taglist_bg_occupied = theme.background.hue_800
-  theme.taglist_bg_urgent =
+  theme.taglist_bg_empty = "#RRGGBBAA" 
+  theme.taglist_bg_occupied = "#RRGGBBAA"
+
+  theme.taglist_bg_urgent = theme.accent.hue_500
+    -- 'linear:0,0:' ..
+    -- dpi(40) ..
+    --   ',0:0,' ..
+    --     theme.accent.hue_500 ..
+    --       ':0.08,' .. theme.accent.hue_500 .. ':0.08,' .. "#RRGGBBAA" .. ':1,' .. theme.background.hue_800
+  theme.taglist_bg_focus = 
     'linear:0,0:' ..
     dpi(40) ..
       ',0:0,' ..
-        theme.accent.hue_500 ..
-          ':0.08,' .. theme.accent.hue_500 .. ':0.08,' .. theme.background.hue_800 .. ':1,' .. theme.background.hue_800
-  theme.taglist_bg_focus =
-    'linear:0,0:' ..
-    dpi(40) ..
-      ',0:0,' ..
-        theme.primary.hue_500 ..
-          ':0.08,' .. theme.primary.hue_500 .. ':0.08,' .. theme.background.hue_800 .. ':1,' .. theme.background.hue_800
+        theme.primary.hue_400
+          -- ':0.08,' .. theme.primary.hue_500 .. ':0.08,' .. theme.background.hue_800 .. ':1,' .. theme.background.hue_800
+    --theme.accent.hue_500
 
   -- Tasklist
 
@@ -98,9 +101,7 @@ local awesome_overrides =
   theme.icon_theme = 'Papirus-Dark'
 
   --Client
-  theme.border_width = dpi(2)
-  theme.border_focus = theme.primary.hue_500
-  theme.border_normal = theme.background.hue_800
+  theme.border_width = dpi(0)
 end
 return {
   theme = theme,

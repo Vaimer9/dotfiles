@@ -311,7 +311,9 @@ return {
     hue_900 = '#263238'
   },
   -- Black
-  black = '#000000',
+  black = '#00000000',
   -- White
-  white = '#FFFFFF'
+  white = '#FFFFFF',
+
+  transparent = '#RRGGBBAA'
 }
