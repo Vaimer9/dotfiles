@@ -88,6 +88,7 @@ local TopPanel = function(s)
   
     local panel =
 	awful.wibar({
+        ontop = true,
 		position = "top",
 		border_width = 4,
         width = s.geometry.width - 15,

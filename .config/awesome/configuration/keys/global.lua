@@ -115,7 +115,8 @@ awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(
     {modkey},
     'Print',
     function()
-      awful.util.spawn_with_shell(apps.default.delayed_screenshot)
+      -- awful.util.spawn_with_shell(apps.default.delayed_screenshot)
+      awful.spawn("flameshot screen")
     end,
     {description = 'Mark an area and screenshot it 10 seconds later (clipboard)', group = 'screenshots (clipboard)'}
   ),
@@ -123,7 +124,8 @@ awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(
     {modkey},
     'p',
     function()
-      awful.util.spawn_with_shell(apps.default.screenshot)
+      -- awful.util.spawn_with_shell(apps.default.screenshot)
+      awful.spawn("flameshot gui")
     end,
     {description = 'Take a screenshot of your active monitor and copy it to clipboard', group = 'screenshots (clipboard)'}
   ),
