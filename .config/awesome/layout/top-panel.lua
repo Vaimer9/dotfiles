@@ -95,7 +95,7 @@ local TopPanel = function(s)
 		screen = s,
 		height = dpi(32),
         shape = function(cr, w, h)
-          gears.shape.rounded_rect(cr, w, h, 10)
+          gears.shape.rectangle(cr, w, h)
         end,
 
 		-- shape = makeNewShape(s.cr, s.geometry.width, 22)
