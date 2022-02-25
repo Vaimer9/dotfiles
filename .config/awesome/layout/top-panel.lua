@@ -96,11 +96,15 @@ local TopPanel = function(s)
     local panel =
 	awful.wibar({
 		position = "top",
-		border_width = 4,
+		border_width = 5,
+        width = s.geometry.width - 15,
 		border_color = "#RRGGBBAA",
 		screen = s,
 		height = dpi(32),
 		-- shape = makeNewShape(s.cr, s.geometry.width, 22)
+        shape = function(cr, w, h)
+          gears.shape.rounded_rect(cr, w, h, 10) -- rounded_rect(cr, w, h, 8)
+        end
 
 	})
     local secondary = wibox(
