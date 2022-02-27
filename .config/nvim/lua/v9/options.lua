@@ -31,3 +31,7 @@ vim.g.dashboard_custom_header = {
 	'   \\  / (_| | | | | | | |  __/ |    / / ',
 	'    \\/ \\__`_|_|_| |_| |_|\\___|_|   /_/  '
 }
+
+vim.g.dashboard_custom_footer = {
+    "#sigmagrindset",
+}
