@@ -10,10 +10,10 @@ local mat_icon = require('widget.material.icon')
 local dpi = require('beautiful').xresources.apply_dpi
 local icons = require('theme.icons')
 
--- local systray = wibox.widget.systray()
---   systray:set_horizontal(true)
---   systray:set_base_size(20)
---   systray.forced_height = 20
+local systray = wibox.widget.systray()
+  systray:set_horizontal(true)
+  systray:set_base_size(20)
+  systray.forced_height = 20
 
 local textclock = wibox.widget.textclock('<span font="Jetbrains Mono 15">%I:%M %p</span>')
 
@@ -96,12 +96,8 @@ local TopPanel = function(s)
 		screen = s,
 		height = dpi(32),
         shape = function(cr, w, h)
-          gears.shape.rectangle(cr, w, h)
+          gears.shape.rounded_rect(cr, w, h, 10)
         end,
-
-		-- shape = makeNewShape(s.cr, s.geometry.width, 22)
-        bg = "#RRGGBBAA"
-
 	})
 
     panel:struts(
