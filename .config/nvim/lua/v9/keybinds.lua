@@ -22,5 +22,5 @@ bind({
     { "<leader>fb", ":DashboardJumpMark<CR>" },
     { "<leader>cn", ":DashboardNewFile<CR>" },
     { "<leader>ls", ":LspInstallInfo<CR>" },
-    { "<leader>tt", ":TransparentToggle<CR>" }
+    { "<leader>tt", ":TransparentToggle<CR>" },
 })
