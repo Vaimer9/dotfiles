@@ -44,21 +44,26 @@ return require('packer').startup(function()
     use 'simrat39/rust-tools.nvim'
     use 'hrsh7th/vim-vsnip'
     use 'nvim-treesitter/nvim-treesitter'
+    -- end of Lsp
+
+    -- Themes
     use 'drewtempelmeyer/palenight.vim'
     use 'flrnd/plastic.vim'
     use 'tomasiser/vim-code-dark'
+    use 'doums/darcula'
+    use 'folke/tokyonight.nvim'
+    use 'Mangeshrex/everblush.vim'
+    -- end
+    
     use 'feline-nvim/feline.nvim'
     use 'norcalli/nvim-colorizer.lua'
     use 'MunifTanjim/nui.nvim'
     use 'alaviss/nim.nvim'
     use 'narutoxy/dim.lua'
-    use 'folke/tokyonight.nvim'
     use 'rakr/vim-one'
-    use 'Mangeshrex/everblush.vim'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
     use 'skywind3000/asyncrun.vim'
-    use 'doums/darcula'
     use 'beauwilliams/focus.nvim'
     use 'sindrets/winshift.nvim'
     use({
