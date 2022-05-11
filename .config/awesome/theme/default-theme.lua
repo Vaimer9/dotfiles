@@ -98,7 +98,7 @@ local awesome_overrides =
   theme.icon_theme = 'Papirus-Dark'
 
   --Client
-  theme.border_width = dpi(0)
+  theme.border_width = dpi(2)
   theme.border_focus = theme.primary.hue_500
   theme.border_normal = theme.background.hue_800
 end

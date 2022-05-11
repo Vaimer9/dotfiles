@@ -8,8 +8,8 @@ return {
   default = {
     terminal = 'alacritty',
     rofi = rofi_command,
-    lock = 'i3lock-fancy',
-    quake = 'terminator',
+    lock = 'slock',
+    quake = 'st',
     screenshot = 'flameshot screen -p ~/Pictures',
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot screen -p ~/Pictures -d 5000',
@@ -21,6 +21,7 @@ return {
     music = rofi_command 
   },
   run_on_start_up = {
+    'xrdb merge /home/v9/coding/repos/st/xresources',
     'picom --config /home/v9/.config/picom/picom.conf', -- Compositor
     'nm-applet --indicator', -- wifi
     'pnmixer', -- shows an audiocontrol applet in systray when installed.

@@ -7,6 +7,7 @@ local function renderClient(client, mode)
     return
   end
 
+  -- poggers this is so pog guys im going to bust a nut
   client.rendering_mode = mode
   client.floating = false
   client.maximized = false

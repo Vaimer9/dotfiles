@@ -107,7 +107,7 @@ awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(
     {modkey},
     'l',
     function()
-      awful.spawn(apps.default.lock)
+      awful.spawn('slock')
     end,
     {description = 'Lock the screen', group = 'awesome'}
   ),
@@ -162,6 +162,26 @@ awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(
     end,
     {description = 'Open a terminal', group = 'launcher'}
   ),
+
+  awful.key(
+    {modkey},
+    'h',
+    function()
+      awful.spawn("cd /home/v9/coding/repos/bucklespring; ./buckle")
+    end,
+    {description = 'Open a terminal', group = 'launcher'}
+  ),
+
+  awful.key(
+    {modkey, altkey},
+    'h',
+    function()
+      awful.spawn("killall buckle")
+    end,
+    {description = 'Open a terminal', group = 'launcher'}
+  ),
+
+  awful.key({modkey, altkey}, 'x', function() awful.spawn('kitty') end, {description = 'Open kitty terminal', group = 'launcher'}),
   awful.key({modkey, 'Control'}, 'r', _G.awesome.restart, {description = 'reload awesome', group = 'awesome'}),
   awful.key({modkey, 'Control'}, 'q', _G.awesome.quit, {description = 'quit awesome', group = 'awesome'}),
   awful.key(
@@ -267,6 +287,7 @@ awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(
     end,
     {description = 'dropdown application', group = 'launcher'}
   ),
+  
   -- Widgets popups
   --[[awful.key(
     {altkey},
