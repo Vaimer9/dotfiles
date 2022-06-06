@@ -50,6 +50,7 @@ return require('packer').startup(function()
     use 'drewtempelmeyer/palenight.vim'
     use 'flrnd/plastic.vim'
     use 'tomasiser/vim-code-dark'
+    use 'Mofiqul/vscode.nvim'
     use 'doums/darcula'
     use 'folke/tokyonight.nvim'
     use 'Mangeshrex/everblush.vim'
@@ -72,5 +73,9 @@ return require('packer').startup(function()
         setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
         ft = { "markdown" }
     })
-
+    use 'p00f/clangd_extensions.nvim'
+    use 'tikhomirov/vim-glsl'
+    -- use 'phanviet/vim-monokai-pro'
+    use 'https://gitlab.com/__tpb/monokai-pro.nvim'
+    use 'ionide/Ionide-vim'
 end)

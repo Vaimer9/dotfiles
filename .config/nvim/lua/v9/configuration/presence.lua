@@ -2,7 +2,7 @@
 require("presence"):setup({
     -- General options
     auto_update         = true,                       
-    neovim_image_text   = "Neovim Elitist",
+    neovim_image_text   = "neovim gang 4lyfe",
     main_image          = "file",                   
 
     editing_text        = "Editing %s",               

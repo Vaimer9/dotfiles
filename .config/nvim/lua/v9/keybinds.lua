@@ -2,7 +2,6 @@ map = vim.api.nvim_set_keymap
 
 local bind = function(bindlist)
     defaults = { noremap = true, silent = true }
-    
     for _, binding in ipairs(bindlist) do
         map("n", string.format("%s", binding[1]), string.format("%s", binding[2]), defaults)
     end
@@ -11,7 +10,7 @@ end
 bind({
     { "<C-a>", ":NvimTreeToggle<CR>" },
     { "<leader>ss", ":w<CR>" },
-    { "<leader>mr", ":! make<CR>" },
+    { "<leader>mr", ":! cd build/; make<CR>" },
     { "<leader>,", ":BufferLineCyclePrev<CR>" },
     { "<leader>.", ":BufferLineCycleNext<CR>" },
     { "<leader>p", ":Telescope<CR>" },
@@ -23,4 +22,5 @@ bind({
     { "<leader>cn", ":DashboardNewFile<CR>" },
     { "<leader>ls", ":LspInstallInfo<CR>" },
     { "<leader>tt", ":TransparentToggle<CR>" },
+    { "<leader>lt", ":LspStop<CR>" }
 })

@@ -2,8 +2,6 @@ local opt = vim.opt
 
 vim.g.mapleader = " "
 
-vim.notify = require('notify')
-
 opt.number = true
 opt.relativenumber = true
 opt.tabstop = 4
@@ -13,8 +11,14 @@ opt.smarttab = true
 opt.expandtab = true
 opt.termguicolors = true
 opt.mouse = "a"
+opt.updatetime = 300
+opt.laststatus=3
+vim.g.monokaipro_filter = "classic"
+vim.g.transparent_enabled = true
 
 vim.cmd [[
+
+colorscheme gruvbox
 set shortmess+=c
 syntax on
 filetype plugin on
@@ -44,4 +48,6 @@ vim.g.dashboard_custom_header = {
 vim.g.dashboard_custom_footer = {
     "#sigmagrindset",
 }
+
+
 require'colorizer'.setup()

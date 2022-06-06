@@ -1,18 +1,5 @@
-local notif = require("notify")
-local popup = require('popup')
-local Input = require("nui.input")
-local event = require("nui.utils.autocmd").event
-
-
 
 -- mount/open the component
-
-function greet()
-    notif("Now get to working!", "welcome_msg", {
-        title = "Welcome Back",
-        timeout = 40
-    })
-end
 
 function make()
     local input = Input({
@@ -40,7 +27,7 @@ function make()
         print("Input closed!")
       end,
       on_submit = function(value)
-        vim.cmd[[:! make value]]
+        vim.api.nvim_command(string.format("! make %s", value))
       end,
     })
     input:mount()

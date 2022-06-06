@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Ionide-vim"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/Ionide-vim",
+    url = "https://github.com/ionide/Ionide-vim"
+  },
   ["asyncrun.vim"] = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/asyncrun.vim",
@@ -78,6 +83,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  ["clangd_extensions.nvim"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/clangd_extensions.nvim",
+    url = "https://github.com/p00f/clangd_extensions.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -165,6 +175,11 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/home/v9/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
+  ["monokai-pro.nvim"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/monokai-pro.nvim",
+    url = "https://gitlab.com/__tpb/monokai-pro.nvim"
   },
   ["neoscroll.nvim"] = {
     loaded = true,
@@ -306,6 +321,11 @@ _G.packer_plugins = {
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/vim-elixir",
     url = "https://github.com/elixir-editors/vim-elixir"
   },
+  ["vim-glsl"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/vim-glsl",
+    url = "https://github.com/tikhomirov/vim-glsl"
+  },
   ["vim-one"] = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/vim-one",
@@ -325,6 +345,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   },
   ["winshift.nvim"] = {
     loaded = true,
