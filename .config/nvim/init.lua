@@ -8,6 +8,7 @@ require('v9.configuration.nvim-tree')
 require('v9.configuration.presence')
 require('v9.configuration.telescope')
 require('v9.configuration.airline')
+require('v9.configuration.toggleterm')
 
 require('v9.configuration.lsp.cmp')
 require('v9.configuration.lsp.lsp-config')

@@ -75,7 +75,12 @@ return require('packer').startup(function()
     })
     use 'p00f/clangd_extensions.nvim'
     use 'tikhomirov/vim-glsl'
-    -- use 'phanviet/vim-monokai-pro'
     use 'https://gitlab.com/__tpb/monokai-pro.nvim'
     use 'ionide/Ionide-vim'
+    use 'akinsho/toggleterm.nvim'
+    use 'kooparse/vim-color-desert-night'
+    use 'MomePP/plastic-nvim'
+    use 'DingDean/wgsl.vim'
+    use 'fugalh/desert.vim'
+    use 'mswift42/vim-themes'
 end)

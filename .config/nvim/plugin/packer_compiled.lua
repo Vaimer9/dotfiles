@@ -251,6 +251,11 @@ _G.packer_plugins = {
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/palenight.vim",
     url = "https://github.com/drewtempelmeyer/palenight.vim"
   },
+  ["plastic-nvim"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/plastic-nvim",
+    url = "https://github.com/MomePP/plastic-nvim"
+  },
   ["plastic.vim"] = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/plastic.vim",
@@ -286,6 +291,11 @@ _G.packer_plugins = {
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
@@ -305,6 +315,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/vim-code-dark",
     url = "https://github.com/tomasiser/vim-code-dark"
+  },
+  ["vim-color-desert-night"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/vim-color-desert-night",
+    url = "https://github.com/kooparse/vim-color-desert-night"
   },
   ["vim-commentary"] = {
     loaded = true,
@@ -350,6 +365,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/v9/.local/share/nvim/site/pack/packer/start/vscode.nvim",
     url = "https://github.com/Mofiqul/vscode.nvim"
+  },
+  ["wgsl.vim"] = {
+    loaded = true,
+    path = "/home/v9/.local/share/nvim/site/pack/packer/start/wgsl.vim",
+    url = "https://github.com/DingDean/wgsl.vim"
   },
   ["winshift.nvim"] = {
     loaded = true,
