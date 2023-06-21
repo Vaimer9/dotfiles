@@ -3,13 +3,10 @@ PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magent
 
 export ZSH="/home/v9/.oh-my-zsh"
 
-# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5B5B5B,bg=default,bold,underline"
-
 source $ZSH/oh-my-zsh.sh
 
-plugins=( 
-	git
-    # zsh-autosuggestions
+plugins=(
+        git
 )
 
 export KEYTIMEOUT=1
@@ -58,33 +55,11 @@ bindkey '^e' edit-command-line
 echo -ne '\e[5 q'
 preexec() { echo -ne '\e[5 q' ;}
 
-####################
-##### Aliases ######
-alias luavim="nvim -u ~/.config/nvim/lua/init.vim"
-alias record="ffmpeg -y -f x11grab -framerate 30 -s 1366x768 -i :0.0"
-alias dotup='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ls="exa"
 alias gp="git push -u origin main"
-alias tmux="tmux -u"
-alias lvim="nvim -u ~/.config/nvim/lsp.vim"
-alias mvim="nvim -u ~/.config/nvim/minimal.vim"
-alias clauck="tty-clock -ct -C 4"
-alias pacman="doas pacman"
-alias sudo="doas"
-alias lofi="mpv https://www.youtube.com/watch\?v\=5qap5aO4i9A --no-video"
-alias vsh="/home/v9/coding/rust/vsh/target/release/vsh"
-alias icat="kitty +kitten icat"
-alias discord="~/Downloads/Discord/Discord </dev/null &>/dev/null &; disown %\~/Downloads/Discord/Discord"
-####################
 
-##########################
-##### Manual Plugins #####
-source /home/v9/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-##########################
+export DISPLAY=$(ip route list default | awk '{print $3}'):0
+export LIBGL_ALWAYS_INDIRECT=1
 
-bindkey '^ ' autosuggest-accept
-
-source /home/v9/.config/broot/launcher/bash/br
-
-ufetch
+cd ~
+eval "$(starship init zsh)"
