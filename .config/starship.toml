@@ -1,0 +1,8 @@
+format = '''
+$directory[λ.](bold blue) 
+'''
+
+add_newline = false
+
+# [character] # The name of the module we are configuring is 'character'
+# success_symbol = '[∮](bold blue)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
